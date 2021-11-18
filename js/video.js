@@ -24,7 +24,7 @@ document.querySelector("#slower").addEventListener("click", function() {
 
 document.querySelector("#faster").addEventListener("click", function() {
 	console.log("Old video speed is " + video.playbackRate);
-	video.playbackRate = 3.0;
+	video.playbackRate = 2.0;
 	console.log("New video speed is " + video.playbackRate);
 });
 
@@ -35,15 +35,15 @@ document.querySelector("#skip").addEventListener("click", function() {
 });
 
 document.querySelector("#mute").addEventListener("click", function() {
-	console.log("Mute");
+	console.log("UnMute");
 	video.muted = true;
 	video.play()
 	console.log(video.currentTime)
 });
 
 document.querySelector("#volume").addEventListener("click", function() {
-	console.log("Half Volume " + video.playbackRate);
+	console.log("50%" + video.playbackRate);
 	video.volume = 0.2;
-	console.log("Full Volume " + video.playbackRate);
+	console.log("100%" + video.playbackRate);
 	video.volume = 1.0;
 });
