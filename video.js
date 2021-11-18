@@ -45,19 +45,23 @@ document.querySelector("#mute").addEventListener("click", function() {
 	console.log(video.currentTime)
 });
 
-document.querySelector("#volume").addEventListener("click", function() {
-	console.log("Volume is" + video.volume);
-	video.volume = val / 100;
-});
+// document.querySelector("#volume").addEventListener("click", function() {
+// 	("#volume").slider({
+// 	min: 0,
+//   	max: 100,
+//   	value: 0,
+// 		range: "min",
+//   	slide: function(event, ui) {
+//     	setVolume(ui.value / 100);
+//   	}
+// });
 
-document.querySelector("#vintage").addEventListener("click", function() {
-	console.log("Old School");
-	video.play();
-	console.log(video.currentTime)
-});
+// document.querySelector("#vintage").addEventListener("click",function() {
+// 	var element = document.getElementById("video");
+// 	element.classList.add("Old School");
+// });
 
-document.querySelector("#orig").addEventListener("click", function() {
-	console.log("Original");
-	video.play();
-	console.log(video.currentTime)
-});
+// document.querySelector("#orig").addEventListener("click",function() {
+// 	var element = document.getElementById("video");
+// 	element.classList.add("Original");
+// });	
